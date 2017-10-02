@@ -30,7 +30,7 @@ class Mirror
      * @param string $hostname
      * @return Mirror
      */
-    public function setHostname(string $hostname)
+    public function setHostname($hostname)
     {
         $this->hostname = $hostname;
         return $this;
@@ -48,7 +48,7 @@ class Mirror
      * @param string $url
      * @return Mirror
      */
-    public function setUrl(string $url)
+    public function setUrl($url)
     {
         $this->url = $url;
         return $this;

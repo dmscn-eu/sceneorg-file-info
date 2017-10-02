@@ -65,7 +65,7 @@ class FileInfo
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -74,7 +74,7 @@ class FileInfo
      * @param int $id
      * @return FileInfo
      */
-    public function setId(int $id): FileInfo
+    public function setId($id)
     {
         $this->id = $id;
         return $this;
@@ -83,7 +83,7 @@ class FileInfo
     /**
      * @return int
      */
-    public function getFilesize(): int
+    public function getFilesize()
     {
         return $this->filesize;
     }
@@ -92,7 +92,7 @@ class FileInfo
      * @param int $filesize
      * @return FileInfo
      */
-    public function setFilesize(int $filesize): FileInfo
+    public function setFilesize($filesize)
     {
         $this->filesize = $filesize;
         return $this;
@@ -101,7 +101,7 @@ class FileInfo
     /**
      * @return \DateTime
      */
-    public function getFiledate(): \DateTime
+    public function getFiledate()
     {
         return $this->filedate;
     }
@@ -110,7 +110,7 @@ class FileInfo
      * @param \DateTime $filedate
      * @return FileInfo
      */
-    public function setFiledate(\DateTime $filedate): FileInfo
+    public function setFiledate(\DateTime $filedate)
     {
         $this->filedate = $filedate;
         return $this;
@@ -119,7 +119,7 @@ class FileInfo
     /**
      * @return int
      */
-    public function getTotalDownloadcount(): int
+    public function getTotalDownloadcount()
     {
         return $this->totalDownloadcount;
     }
@@ -128,7 +128,7 @@ class FileInfo
      * @param int $totalDownloadcount
      * @return FileInfo
      */
-    public function setTotalDownloadcount(int $totalDownloadcount): FileInfo
+    public function setTotalDownloadcount($totalDownloadcount)
     {
         $this->totalDownloadcount = $totalDownloadcount;
         return $this;
@@ -137,7 +137,7 @@ class FileInfo
     /**
      * @return Mirrors
      */
-    public function getMirrors(): Mirrors
+    public function getMirrors()
     {
         return $this->mirrors;
     }
@@ -146,7 +146,7 @@ class FileInfo
      * @param Mirrors $mirrors
      * @return FileInfo
      */
-    public function setMirrors(Mirrors $mirrors): FileInfo
+    public function setMirrors(Mirrors $mirrors)
     {
         $this->mirrors = $mirrors;
         return $this;

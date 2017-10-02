@@ -195,7 +195,9 @@ class Parser
 
         $fileInfo->setId($this->getId());
         $fileInfo->setFilesize($this->getFilesize());
-        $fileInfo->setFiledate($this->getFiledate());
+        if ($this->getFiledate()) {
+            $fileInfo->setFiledate($this->getFiledate());
+        }
         $fileInfo->setDescriptionText($this->getFileIdDiz());
         $fileInfo->setTotalDownloadcount($this->getDownloadCount());
 
